@@ -1,0 +1,13 @@
+{
+  "target_role": "",
+  "authoritative_sources": [],
+  "public_claim_manifest": "05-public-claim-manifest.csv",
+  "website": {"primary": "", "replicas": [], "public_url": "", "status": "draft"},
+  "knowledge_base": {"source_dir": "knowledge-base", "articles": ["00-home.md", "01-case-primary.md", "02-case-secondary.md", "04-project-index.md"]},
+  "documents": {"source_script": "", "output_dir": "", "expected_pages": null, "status": "draft"},
+  "infographics": {"source_script": "", "output_dir": ""},
+  "sensitive_terms": ["毛利", "净利润", "客户底价"],
+  "decisions": [],
+  "rejected_claims": [],
+  "qa": {"desktop": false, "narrow_desktop": false, "mobile": false, "all_document_pages": false, "links": false, "public_risk": false}
+}
