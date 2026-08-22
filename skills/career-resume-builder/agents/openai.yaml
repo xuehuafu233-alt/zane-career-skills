@@ -1,0 +1,4 @@
+interface:
+  display_name: "多语言职业简历构建器"
+  short_description: "从证据与招聘任务出发，生成不套模板的多语言简历并完成全页验收"
+  default_prompt: "使用 $career-resume-builder，根据我的岗位、证据、招聘市场、语言、渠道和审美，从零生成独属于我的简历并完成 PDF 验收。"
