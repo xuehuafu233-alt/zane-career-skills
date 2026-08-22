@@ -1,0 +1,4 @@
+interface:
+  display_name: "Former Employer Data Redactor"
+  short_description: "判断前雇主经营数据应公开保留、模糊化、转口述或删除"
+  default_prompt: "Use $former-employer-data-redactor to review this portfolio for former-employer confidentiality risk."
