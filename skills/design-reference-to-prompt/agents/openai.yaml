@@ -1,0 +1,4 @@
+interface:
+  display_name: "参考设计转开发提示词"
+  short_description: "把截图或网页拆成可执行的前端 Master Prompt"
+  default_prompt: "Use $design-reference-to-prompt to analyze this visual reference and produce an implementation-ready Master Prompt."
