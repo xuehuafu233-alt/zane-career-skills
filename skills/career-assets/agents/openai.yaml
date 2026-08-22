@@ -1,0 +1,4 @@
+interface:
+  display_name: "职业资产总控"
+  short_description: "统一路由简历、作品集、案例、审核与投递的职业资产工作流"
+  default_prompt: "使用 $career-assets，根据我的求职目标和现有材料，先建立审核合同，再按阶段完成需要的职业资产。"
