@@ -1,0 +1,4 @@
+interface:
+  display_name: "Career Portfolio Builder"
+  short_description: "从事实盘点到简历、网站和深读证据的个性化职业资产生产系统"
+  default_prompt: "使用 $career-portfolio-builder，从我的原始材料出发选择必要载体，构建独属于我的完整招聘职业资产系统。"
