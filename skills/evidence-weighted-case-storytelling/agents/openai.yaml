@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence-weighted Case Storytelling"
+  short_description: "按证据强度组织职业案例中的职责、数据、归因与视觉权重"
+  default_prompt: "Use $evidence-weighted-case-storytelling to turn this experience into a credible career case."
