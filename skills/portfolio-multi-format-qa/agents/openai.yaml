@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfolio Multi-format QA"
+  short_description: "同时验收桌面网站、手机页面、Word、信息图与线上副本"
+  default_prompt: "Use $portfolio-multi-format-qa to inspect every public portfolio format before release."
