@@ -1,0 +1,4 @@
+interface:
+  display_name: "Career Portfolio Architecture"
+  short_description: "设计30秒网站钩子、知识库深读与投递文档的分层作品集体系"
+  default_prompt: "Use $career-portfolio-architecture to design a layered career portfolio for my target role."
