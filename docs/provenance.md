@@ -1,33 +1,8 @@
-# 来源与公开边界
+# Provenance
 
-## Zane 方法
+The `zane-` namespace identifies this public packaging and the reusable method layer maintained by Zane. It does not claim ownership of third-party libraries, models, cultural source materials, or general theories referenced by a Skill.
 
-以下方法来自 Zane 在真实职业资产、双语简历、作品集网站、案例编辑、发布 QA、视觉参考拆解和自我认识实践中的反复问题、失败复盘与可验证改进：
+The career Skills were shaped through repeated resume, bilingual portfolio, case-study, visual-reference, evidence attribution, employer-data, and release-QA work. Personal facts and employer materials were removed from this package.
 
-- 职业资产总控与从零构建；
-- 简历、作品集网站和案例的分层架构；
-- 证据权重、职责归因与前雇主数据边界；
-- 保留个人文风的信息取舍与中文案例编辑；
-- 多语言本地化和多格式发布验收；
-- 设计参考的原创转译；
-- 东方自然光生活影像方法；
-- 事实、体验、自我叙述与待验证模式的主体性分析。
 
-公共知识（例如信息架构、证据分级、可访问性、响应式设计）可以被使用，但本仓库保留的是 Zane 对这些问题的组合、边界和验收方式，不声称发明公共概念本身。
-
-## 不纳入
-
-- 个人姓名、公司、客户、联系方式、项目数字、域名、照片和私人文件；
-- `panpan2026` 工作台规则、生命域真源、关系与身体资料、私有路径和凭据；
-- dbs、宝玉、外部设计库和其他作者的原始 Skill；
-- `voc-koc-mix` 当前绑定的具体品牌、产品卖点和舆情规则；它保留在私有工作台，待单独泛化后再决定是否发布。
-
-## 第三方参考
-
-`design-reference-to-prompt` 的来源说明仅表示它参考了公开展示的“视觉参考 → 设计提示词 → vibe coding”工作流；它不包含、复制或声称还原任何付费提示词库、内部规则、源码或受限资产。
-
-## 署名
-
-可使用：`Zane method; structured with AI assistance.`
-
-如果你基于本仓库大幅改造，建议在自己的 README 中保留来源、改动范围和许可证信息。
+Third-party upstream Skills and private workbench infrastructure are excluded rather than rebranded.
