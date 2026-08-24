@@ -1,4 +1,0 @@
-interface:
-  display_name: "东方自然光生活电影感"
-  short_description: "生成东方古代生活与江南汉服的清透自然光纪录片电影视觉"
-  default_prompt: "使用 $eastern-natural-light-cinema 为这个主题生成清透自然光、真实生活状态的东方电影感视觉方案。"
