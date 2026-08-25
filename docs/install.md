@@ -15,8 +15,8 @@ npx -y skills add xuehuafu233-alt/zane-career-skills -g --all
 把仓库 `skills/` 下需要的 Skill 目录复制到你的 Codex skills 目录：
 
 ```bash
-cp -R skills/career-portfolio-builder ~/.codex/skills/
-cp -R skills/career-assets ~/.codex/skills/
+cp -R skills/zane-career-portfolio-builder ~/.codex/skills/
+cp -R skills/zane-career-assets ~/.codex/skills/
 ```
 
 也可以整体复制 `skills/` 目录。复制后重新打开 Agent 会话，让它重新读取 Skill 目录。
@@ -36,8 +36,8 @@ cp -R skills/career-assets ~/.codex/skills/
 - 语言、视觉偏好、文风和公开边界；
 - 这次交付完成的证据。
 
-先从 `career-portfolio-builder` 开始，或从 `career-assets` 让它按任务自动路由。
+先从 `zane-career-portfolio-builder` 开始，或从 `zane-career-assets` 让它按任务自动路由。
 
 ## 发布前
 
-使用 `portfolio-multi-format-qa` 复查全部载体。网页能打开、PDF 能生成或二维码能扫描，都不单独等于整套职业资产已经通过。
+使用 `zane-portfolio-multi-format-qa` 复查全部载体。网页能打开、PDF 能生成或二维码能扫描，都不单独等于整套职业资产已经通过。
