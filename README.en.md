@@ -14,7 +14,7 @@ One command installs 11 independently usable Agent Skills for evidence intake, h
 
 [Quick start](#quick-start) · [What it solves](#what-it-solves) · [Capabilities](#capabilities) · [Install](#install) · [Method boundaries](#method-boundaries)
 
-![From experience to application-ready career assets](docs/career-assets-flow.en.svg)
+![From experience to application-ready career assets](docs/zane-career-assets-flow.en.svg)
 
 ## What it solves
 
