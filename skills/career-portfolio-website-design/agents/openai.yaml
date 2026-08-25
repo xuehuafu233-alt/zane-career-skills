@@ -1,4 +1,0 @@
-interface:
-  display_name: "职业作品集网站设计"
-  short_description: "从招聘路径和视觉人格出发，生成不套固定风格的完整作品集网站"
-  default_prompt: "使用 $career-portfolio-website-design，根据我的岗位、证据、真实资产和审美偏好，从零设计并验收独属于我的作品集网站。"
