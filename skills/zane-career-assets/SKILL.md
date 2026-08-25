@@ -130,3 +130,5 @@ python3 scripts/check_external_package.py <package> --expected-skills <count>
 ## 发布状态
 
 本 Skill 组为 `v0.7 beta`：能力边界已经固定，仍允许根据真实使用中的新问题进行小步迭代。它提供从资料盘点到可投递／可部署交付的完整工作流，不承诺替用户补齐不存在的事实、代替用户确认，也不把部署或现实招聘结果伪装成 Skill 自身的完成证明。
+
+方法形成记录见 [references/method-origin.md](references/method-origin.md)。
