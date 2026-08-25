@@ -5,10 +5,10 @@
 > 不套简历模板。把你真实做过的事，变成一套能被招聘者快速看懂、愿意继续深读的职业资产。
 
 [![Version](https://img.shields.io/badge/version-v0.7_beta-2563EB.svg?style=flat-square)](VERSION.md)
-[![Skills](https://img.shields.io/badge/skills-12-0F766E.svg?style=flat-square)](docs/skill-inventory.md)
+[![Skills](https://img.shields.io/badge/skills-11-0F766E.svg?style=flat-square)](docs/skill-inventory.md)
 [![License](https://img.shields.io/badge/license-MIT-16A34A.svg?style=flat-square)](LICENSE)
 
-一条命令安装 12 个可独立调用的 Agent Skills，覆盖经历盘点、招聘定位、多语言简历、作品集网站、案例叙事、视觉转译、隐私边界与发布验收。
+一条命令安装 11 个可独立调用的 Agent Skills，覆盖经历盘点、招聘定位、多语言简历、作品集网站、案例叙事、视觉转译、隐私边界与发布验收。
 
 **适用于 Claude Code、Codex，以及其他支持 Agent Skills 的工具。**
 
@@ -94,7 +94,6 @@ npx -y skills add xuehuafu233-alt/zane-career-skills -g --all
 | 写招聘平台第一句话 | `zane-career-application-greeting` | 中文、英文投递招呼语与正确语言入口 |
 | 验收发布版本 | `zane-portfolio-multi-format-qa` | 桌面／手机、网页／PDF／Word、二维码与链接检查 |
 | 把视觉参考变成原创实现方向 | `zane-design-reference-to-prompt` | 设计判断、响应式规则与开发提示词 |
-| 创建东方自然光生活视觉 | `zane-eastern-natural-light-cinema` | 场景、动作、光线、材质与生图提示词 |
 
 完整目录与边界见 [Skill Inventory](docs/skill-inventory.md)。
 
@@ -151,7 +150,7 @@ npx -y skills add xuehuafu233-alt/zane-career-skills -g --all
 
 ## 来源与许可证
 
-本仓库来自真实职业资产项目中的反复问题、失败复盘和方法沉淀；不包含个人简历、公司内部材料、联系方式、客户数据或私有工作台路径。
+本仓库来自真实职业资产项目中的反复问题、失败复盘和方法沉淀；不包含个人简历、公司内部材料、联系方式、客户数据或私人本地路径。
 
 方法来源和第三方边界见 [Provenance](docs/provenance.md)。除另有说明外，本仓库采用 [MIT License](LICENSE)。
 

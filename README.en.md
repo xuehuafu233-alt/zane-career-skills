@@ -5,10 +5,10 @@
 > No resume template. Turn what you have actually done into career assets that recruiters can understand quickly and want to explore further.
 
 [![Version](https://img.shields.io/badge/version-v0.7_beta-2563EB.svg?style=flat-square)](VERSION.md)
-[![Skills](https://img.shields.io/badge/skills-12-0F766E.svg?style=flat-square)](docs/skill-inventory.md)
+[![Skills](https://img.shields.io/badge/skills-11-0F766E.svg?style=flat-square)](docs/skill-inventory.md)
 [![License](https://img.shields.io/badge/license-MIT-16A34A.svg?style=flat-square)](LICENSE)
 
-One command installs 12 independently usable Agent Skills for evidence intake, hiring positioning, multilingual resumes, portfolio websites, case storytelling, visual direction, privacy decisions, and release QA.
+One command installs 11 independently usable Agent Skills for evidence intake, hiring positioning, multilingual resumes, portfolio websites, case storytelling, visual direction, privacy decisions, and release QA.
 
 **Works with Claude Code, Codex, and other tools that support Agent Skills.**
 
@@ -95,7 +95,6 @@ A generated file is not automatically application-ready. Candidate, user-approve
 | Write the first application message | `zane-career-application-greeting` | Chinese or English outreach with the correct language entry |
 | Validate a release candidate | `zane-portfolio-multi-format-qa` | Desktop/mobile, web/PDF/Word, QR, and link checks |
 | Turn design references into an original direction | `zane-design-reference-to-prompt` | Design judgments, responsive rules, implementation prompt |
-| Create natural-light Eastern lifestyle visuals | `zane-eastern-natural-light-cinema` | Scene, action, light, material, and generation prompt |
 
 See the [Skill Inventory](docs/skill-inventory.md) for the complete scope.
 
@@ -152,7 +151,7 @@ When evidence is missing, the Skills should leave an evidence gap, not invent a 
 
 ## Provenance and license
 
-This collection grew from repeated problems, failed iterations, and verified improvements in real career-asset work. It contains no personal resume, employer source files, contact details, client data, or private workbench paths.
+This collection grew from repeated problems, failed iterations, and verified improvements in real career-asset work. It contains no personal resume, employer source files, contact details, client data, or private local paths.
 
 See [Provenance](docs/provenance.md) for source and third-party boundaries. Unless otherwise stated, the repository is released under the [MIT License](LICENSE).
 
