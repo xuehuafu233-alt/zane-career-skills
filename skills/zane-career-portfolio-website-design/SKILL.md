@@ -140,3 +140,5 @@ description: v0.7 beta：从零设计、构建或重构面向招聘的个性化�
 ## 发布状态
 
 本 Skill 为 `v0.7 beta`，可用于从零设计、构建和验收个性化职业作品集网站。它负责把目标、证据、文风、视觉偏好和交付要求转成可执行页面，不替用户虚构事实，也不替用户完成最终确认、公开部署或现实招聘判断。
+
+方法形成记录见 [references/method-origin.md](references/method-origin.md)。
