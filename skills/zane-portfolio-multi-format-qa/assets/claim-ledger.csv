@@ -1,0 +1,3 @@
+project,metric,value,unit,as_of_or_window,scope,evidence_type,owner_scope,resume,homepage,deep_reading,caption,source_or_note
+fictional_example_brand_a,brand_association_share,31.2,percent,20XX-06-30 trailing_30d,point_in_time,platform_observation,team_result,yes,optional,yes,yes,fictional_example_replace_with_source
+fictional_example_brand_b,customer_acquisition,48000,people,project_period,modeled_total,modeled,team_result,yes,optional,yes,optional,fictional_example_must_keep_modeled_label
