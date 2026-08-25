@@ -1,4 +1,0 @@
-interface:
-  display_name: "Chinese Career Case Editor"
-  short_description: "把中文职业案例改成真实、有取舍且没有咨询模板腔的业务叙事"
-  default_prompt: "Use $career-case-editor-zh to edit this Chinese career case without making it sound like AI or consulting copy."
