@@ -1,6 +1,6 @@
 # Public Skill Inventory
 
-This release contains 12 public Skills. The `zane-` prefix is the public namespace; it does not imply that every underlying theory or tool was invented from nothing. Provenance is described in `docs/provenance.md`.
+This release contains 11 public Skills. The `zane-` prefix is the public namespace; it does not imply that every underlying theory or tool was invented from nothing. Provenance is described in `docs/provenance.md`.
 
 | Skill | Public role |
 |---|---|
@@ -15,6 +15,5 @@ This release contains 12 public Skills. The `zane-` prefix is the public namespa
 | `zane-former-employer-data-redactor` | Employer-data publication boundaries |
 | `zane-portfolio-multi-format-qa` | Multi-format release QA |
 | `zane-design-reference-to-prompt` | Design reference to implementation prompt |
-| `zane-eastern-natural-light-cinema` | Natural-light historical-life visual direction |
 
-Excluded from this public package: private life/workbench routing, employer source files, credentials, and third-party upstream Skills.
+Excluded from this public package: private personal data, local routing rules, employer source files, credentials, and third-party upstream Skills.
