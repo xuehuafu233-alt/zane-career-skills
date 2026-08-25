@@ -57,3 +57,5 @@ description: 为中文或英文招聘平台、猎头和主动投递生成并审�
 - 风险提示：仅列真实不确定项，不把审计说明塞进发送文本。
 
 需要多版本时，最多给三种：中文主动投递、中文猎头/HR回复、英文主动投递。每版只改语气和入口，不改事实。详细合同见 [references/contract.md](references/contract.md)。
+
+方法形成记录见 [references/method-origin.md](references/method-origin.md)。
