@@ -1,6 +1,6 @@
 # Public Skill Inventory
 
-This release contains 13 public Skills. The `zane-` prefix is the public namespace; it does not imply that every underlying theory or tool was invented from nothing. Provenance is described in `docs/provenance.md`.
+This release contains 12 public Skills. The `zane-` prefix is the public namespace; it does not imply that every underlying theory or tool was invented from nothing. Provenance is described in `docs/provenance.md`.
 
 | Skill | Public role |
 |---|---|
