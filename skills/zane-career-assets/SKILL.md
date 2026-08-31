@@ -1,5 +1,5 @@
 ---
-name: zane-career-assets
+name: career-assets
 description: 职业资产 Skill 组的统一入口和状态总控。用于找工作、求职准备、改简历、做中英文简历、做职业作品集或网站、整理项目案例、审查前雇主数据、验收 PDF／Word／网页、生成投递招呼语，或用户不知道该调用哪个职业 Skill 时使用。它根据目标和当前阶段调用必要的专项 Skill，维护跨阶段状态，并在事实、文案、结构、视觉和最终交付前强制人审闸门。
 ---
 
@@ -18,7 +18,7 @@ description: 职业资产 Skill 组的统一入口和状态总控。用于找工
 将需要跨阶段生产或生成可投递成品的任务建立状态文件：
 
 ```bash
-python3 scripts/career_assets_state.py init --state <project>/zane-career-assets-state.json --project "<name>" --scope resume
+python3 scripts/career_assets_state.py init --state <project>/career-assets-state.json --project "<name>" --scope resume
 ```
 
 只诊断某句文案、审查一项数据或回答一个问题时，不强制建立状态文件。
@@ -27,15 +27,15 @@ python3 scripts/career_assets_state.py init --state <project>/zane-career-assets
 
 只读当前需要的专项 Skill。完整路由、输入输出和停止线见 [references/routing.md](references/routing.md)。
 
-- 完整职业资产项目：`zane-career-portfolio-builder`；
-- 简历：`zane-career-resume-builder`；
-- 网站信息架构：`zane-career-portfolio-architecture`；
-- 网站设计与实现：`zane-career-portfolio-website-design`；
-- 案例证据与归因：`zane-evidence-weighted-case-storytelling`；
-- 中文案例编辑：`zane-career-case-editor-zh`；
-- 前雇主数据安全：`zane-former-employer-data-redactor`；
-- 多格式交付验收：`zane-portfolio-multi-format-qa`；
-- 投递第一句：`zane-career-application-greeting`。
+- 完整职业资产项目：`career-portfolio-builder`；
+- 简历：`career-resume-builder`；
+- 网站信息架构：`career-portfolio-architecture`；
+- 网站设计与实现：`career-portfolio-website-design`；
+- 案例证据与归因：`evidence-weighted-case-storytelling`；
+- 中文案例编辑：`career-case-editor-zh`；
+- 前雇主数据安全：`former-employer-data-redactor`；
+- 多格式交付验收：`portfolio-multi-format-qa`；
+- 投递第一句：`career-application-greeting`。
 
 用户只要单项交付时，调用对应专项 Skill 并返回本入口记录状态；不自动扩展成整套作品集。
 
@@ -44,6 +44,8 @@ python3 scripts/career_assets_state.py init --state <project>/zane-career-assets
 持续维护五层真源：事实、招聘判断、载体分工、表达设计、发布状态。用户确认、否决、事实纠正或稳定偏好出现时，自动写入决策账本；不等待用户再次要求“写进合同”。
 
 每个资产分别记录状态，禁止用一个总状态混写简历、网站和部署。
+
+每个现实触点还要记录自己的局部目的、前序输入、下一环依赖和现实证据。局部资产完成不等于投递、面试或招聘结果完成；只有真实投递、面试或招聘反馈才进入现实验证。
 
 项目只记录当前工作阶段`intake / modeling / production / qa / release / feedback / complete`，它不代表任何资产已经确认或部署。单项资产还可记为`on_hold / not_required / rejected`。
 
@@ -64,7 +66,7 @@ python3 scripts/career_assets_state.py init --state <project>/zane-career-assets
 记录用户确认或明确放弃审核：
 
 ```bash
-python3 scripts/career_assets_state.py decide --state <project>/zane-career-assets-state.json --gate content --status approved --note "<user's decision>" --evidence <reviewed-file>
+python3 scripts/career_assets_state.py decide --state <project>/career-assets-state.json --gate content --status approved --note "<user's decision>" --evidence <reviewed-file>
 ```
 
 不适用的闸门可记为 `not_required`，但必须说明原因。
@@ -74,7 +76,7 @@ python3 scripts/career_assets_state.py decide --state <project>/zane-career-asse
 生成可投递简历前运行：
 
 ```bash
-python3 scripts/career_assets_state.py check --state <project>/zane-career-assets-state.json --action build-resume
+python3 scripts/career_assets_state.py check --state <project>/career-assets-state.json --action build-resume
 ```
 
 生成可部署网站前运行 `--action build-website`；将候选版标记为正式投递或已交付前运行 `--action release`。检查失败必须停止，向用户展示当前待审核对象，不得先出成品再补审。
@@ -84,21 +86,21 @@ python3 scripts/career_assets_state.py check --state <project>/zane-career-asset
 记录影响后续的确认、否决、事实纠正或稳定偏好：
 
 ```bash
-python3 scripts/career_assets_state.py record --state <project>/zane-career-assets-state.json \
+python3 scripts/career_assets_state.py record --state <project>/career-assets-state.json \
   --area content --status confirmed --statement "<decision>" --reason "<why>" --affects resume,website
 ```
 
 把任务、证据、主张、术语、结构、视觉与发布合同登记为一等状态，不依赖聊天记忆：
 
 ```bash
-python3 scripts/career_assets_state.py contract --state <project>/zane-career-assets-state.json \
+python3 scripts/career_assets_state.py contract --state <project>/career-assets-state.json \
   --name terminology --status current --path <project>/terminology.md
 ```
 
 不应读取的敏感输入只登记描述，不写入原文：
 
 ```bash
-python3 scripts/career_assets_state.py exclude --state <project>/zane-career-assets-state.json \
+python3 scripts/career_assets_state.py exclude --state <project>/career-assets-state.json \
   --description "participant records" --reason "third-party sensitive data" --replacement "redacted project summary"
 ```
 
