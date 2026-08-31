@@ -1,5 +1,5 @@
 ---
-name: zane-career-resume-builder
+name: career-resume-builder
 description: 从零创建、重构并交付面向不同招聘市场的职业简历，支持中文、英文及其他目标语言的本地化重写。根据目标岗位、招聘渠道、读者语言、证据强度、职业阶段和审美偏好，自主决定信息结构、页数、视觉人格与交付格式；覆盖资料盘点、事实归因、招聘定位、扫读层级、文案收敛、黑白结构、个性化视觉、PDF验收、多语言链接路径与作品集承接。用于用户只有零散经历、旧简历效果差、招聘者看不懂、需要跨语言重写或内容反复修改、版面失衡，或希望得到不套固定模板的完整简历时。
 ---
 
@@ -7,7 +7,9 @@ description: 从零创建、重构并交付面向不同招聘市场的职业简�
 
 把简历当作有限空间内的招聘决策界面。固定的是判断顺序与验收标准，不固定页数、模块名称、颜色、版式或文案句型。简历继承职业资产系统的事实与判断层，不在 PDF 中另建一套事实。
 
-若任务由 `zane-career-assets` 总控发起，先读取其状态文件和交接包，只处理当前获准阶段。若用户直接调用本 Skill 从零生成可投递简历，也要建立 `zane-career-assets-state.json`；“帮我做完”不等于用户放弃文案、结构和视觉审核。
+本 Skill 只负责简历当前环节：让合适的读者形成相关性与能力判断并愿意进入下一环；不把简历生成、投递或面试结果混为一谈。
+
+若任务由 `career-assets` 总控发起，先读取其状态文件和交接包，只处理当前获准阶段。若用户直接调用本 Skill 从零生成可投递简历，也要建立 `career-assets-state.json`；“帮我做完”不等于用户放弃文案、结构和视觉审核。
 
 ## 生产流程
 
@@ -17,7 +19,7 @@ description: 从零创建、重构并交付面向不同招聘市场的职业简�
 
 建立任务合同，确认目标岗位与级别、主要阅读者、招聘渠道、展示截断规则、打印或屏幕场景、语言、公开边界、截止时间与交付格式；同时写清首触点要促成的决定、下一环和最终招聘结果。简历优先完成能力证明与面试入口，不主动承担后续面试／尽调的全部解释任务；只有会造成重大误导、法律／合规／隐私风险或直接改变当前岗位判断的事实才阻断成稿。
 
-目标涉及特定国家或招聘市场时，读取[目标市场适配协议](../zane-career-assets/references/market-localization.md)，区分已验证规则、样本趋势与假设。
+目标涉及特定国家或招聘市场时，读取[目标市场适配协议](../career-assets/references/market-localization.md)，区分已验证规则、样本趋势与假设。
 
 平台只展示前若干字符时，把该数字作为本项目的 `preview_budget`；没有平台截断证据时，不默认 22 字。页数由资历、证据密度与渠道决定，不默认所有人两页。
 
@@ -65,7 +67,7 @@ description: 从零创建、重构并交付面向不同招聘市场的职业简�
 
 只将通过的黑白结构和视觉方向实现为可编辑源与 PDF。建立全局排版变量，避免为每段经历叠加局部补丁。压行优先改重复与冗余，不得为排版偷偷改变事实、时间或归因。
 
-Build 前必须运行 `zane-career-assets/scripts/career_assets_state.py check --action build-resume`。`task_contract / evidence_position / content / structure / visual` 任一项仍为 `pending` 时立即停止。只有用户明确确认才记为 `approved`；用户明确要求一次性出稿时才可记为 `waived`，且生成物仍只能称候选版。
+Build 前必须运行 `career-assets/scripts/career_assets_state.py check --action build-resume`。`task_contract / evidence_position / content / structure / visual` 任一项仍为 `pending` 时立即停止。只有用户明确确认才记为 `approved`；用户明确要求一次性出稿时才可记为 `waived`，且生成物仍只能称候选版。
 
 ### 10. Verify
 
