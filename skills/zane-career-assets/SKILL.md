@@ -15,13 +15,13 @@ description: 职业资产 Skill 组的统一入口和状态总控。用于找工
 
 先做隐私准入。受试者、患者、客户个人资料、证件、未脱敏合同、私聊和访问凭据等高度敏感原件若不是完成任务所必需，不读取、不复制到工作区，只记录描述与排除原因，并请求脱敏摘要或公开替代证据。
 
-将需要跨阶段生产或生成可投递成品的任务建立状态文件：
+将需要跨阶段生产、生成可投递成品，或需要等待反馈的任务建立状态文件：
 
 ```bash
 python3 scripts/career_assets_state.py init --state <project>/zane-career-assets-state.json --project "<name>" --scope resume
 ```
 
-只诊断某句文案、审查一项数据或回答一个问题时，不强制建立状态文件。
+只诊断某句文案、审查一项数据、回答一个问题、翻译已确认文本或发送已确认材料时，不强制建立状态文件。
 
 ## 按当前任务路由
 
@@ -45,7 +45,7 @@ python3 scripts/career_assets_state.py init --state <project>/zane-career-assets
 
 每个资产分别记录状态，禁止用一个总状态混写简历、网站和部署。
 
-每个现实触点还要记录自己的局部目的、前序输入、下一环依赖和现实证据。局部资产完成不等于投递、面试或招聘结果完成；只有真实投递、面试或招聘反馈才进入现实验证。
+需要跨会话跟踪、等待反馈或回填的现实触点，才记录局部目的、前序输入、下一环依赖和现实证据。一次性翻译、已确认材料的投递或低暴露动作不强制建立触点记录；局部资产完成仍不等于投递、面试或招聘结果完成，只有真实投递、面试或招聘反馈才进入现实验证。
 
 项目只记录当前工作阶段`intake / modeling / production / qa / release / feedback / complete`，它不代表任何资产已经确认或部署。单项资产还可记为`on_hold / not_required / rejected`。
 
@@ -63,6 +63,8 @@ python3 scripts/career_assets_state.py init --state <project>/zane-career-assets
 
 每道闸门只能是 `pending / approved / waived / not_required`。`approved` 和 `waived` 必须来自用户的明确表达；不得将“帮我做完”、沉默、上传材料或 Agent 自评解释为审核通过。
 
+这些阶段闸门只约束从零生产、正式发布和资产状态晋级，不约束已经确认材料的翻译、发送、一次性投递或其他低暴露现实动作；后者按当前现实介入规则处理。
+
 记录用户确认或明确放弃审核：
 
 ```bash
@@ -79,7 +81,7 @@ python3 scripts/career_assets_state.py decide --state <project>/zane-career-asse
 python3 scripts/career_assets_state.py check --state <project>/zane-career-assets-state.json --action build-resume
 ```
 
-生成可部署网站前运行 `--action build-website`；将候选版标记为正式投递或已交付前运行 `--action release`。检查失败必须停止，向用户展示当前待审核对象，不得先出成品再补审。
+生成可部署网站前运行 `--action build-website`；将候选版标记为正式投递或已交付前运行 `--action release`。这些检查只在生产或状态晋级时生效；检查失败必须停止对应生产动作，向用户展示当前待审核对象，不得先出成品再补审。
 
 用户明确要求一次性出稿时，可以将未审核阶段记为 `waived`，Agent 需完成内部迭代与 QA，交付仍只能称为候选版；不能默认代用户放弃。
 
